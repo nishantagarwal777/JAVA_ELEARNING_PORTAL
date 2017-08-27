@@ -1,0 +1,237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head >
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>The StringBuilder Class</title>
+<script type="text/javascript" language="JavaScript" src="../../imageSwap.js">
+</script>
+<!--<link rel="SHORTCUT ICON" href="favicon.ico"/> -->
+<link rel="stylesheet" href="../../LinksForChapters.css" type="text/css" />
+</link>
+</head>
+<body bgcolor="#faeafd">
+<table width="100%" border="0">
+	<tr>
+		<td width='*'>&nbsp;</td>
+		<td width="950">
+			<table width="950" height="100%" border="0">
+				<tr height="80">
+					<td>
+						<table width="950" height="100%" border="0">
+							<tr class="body1">
+								<td width="37">&nbsp;</td>
+								<td width="442"><img src="../../Pictures/logo.jpg" width="335" height="75" alt="Image Not Found" title="A tutorial which will make learning Java fun"/></td>
+								<td width="471">
+									<p align="right"><a href="../Change_Password/Change_Password.jsp"  onmouseover="imageSwapOnMouseOver(Image6,11)" onMouseOut="imageSwapOnMouseOut(Image6,10)"><img src="../../Pictures/change password.png" alt="Image Not Found" name="Image6" width="200" height="20" border="0" id="Image6"  title="Change your password"/></a> <a href="../Home/Log In.jsp"  onmouseover="imageSwapOnMouseOver(Image1,0)" onMouseOut="imageSwapOnMouseOut(Image1,5)"><img src="../../Pictures/logout.png" alt="Image Not Found" name="Image1" width="101" height="20" border="0" id="Image1"  title="Log out from the site"/></a></p>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr height="44">
+					<td>
+						<table width="950" border="0" height="100%">
+							<tr class="body1">
+								<td width="10">&nbsp;</td>
+								<td width="940">
+									<a href="../Home/home.jsp" onMouseOver="imageSwapOnMouseOver(Image2,1)" onMouseOut="imageSwapOnMouseOut(Image2,6)"><img src="../../Pictures/home - Copy.png" alt="Image Not Found" name="Image2" width="99" height="21" border="0" id="Image2"  title="Go back to Home Page"/></a> <a href="../Basics Of Java/What is Java.html" onMouseOver="imageSwapOnMouseOver(Image3,2)" onMouseOut="imageSwapOnMouseOut(Image3,7)"><img src="../../Pictures/java tutorial.png" alt="Image Not Found" name="Image3" width="190" height="21" border="0" id="Image3" title="Go to the tutorial" /></a> <a href="../Exam_Cell/index.jsp" onMouseOver="imageSwapOnMouseOver(Image4,3)" onMouseOut="imageSwapOnMouseOut(Image4,8)"><img src="../../Pictures/self-assessment test.png" alt="Image Not Found" name="Image4" width="349" height="21" border="0" id="Image4"  title="Take an assessment test to judge your knowledge"/></a> <a href="../Exam_Cell/previous_results_main.jsp" onMouseOver="imageSwapOnMouseOver(Image5,4)" onMouseOut="imageSwapOnMouseOut(Image5,9)"><img src="../../Pictures/history of result.png" alt="Image Not Found" name="Image5" width="265" height="21" border="0" id="Image5"  title="See the result of the previous examinations taken by you"/></a>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<table width="950" border="0">
+							<tr>
+								<td class="index1" width="160">
+									<div id="leftmenu"> <a href="../Basics Of Java/What is Java.html">Basics Of Java</a> <br />
+										<a href="../Oop/Encapsulation.html"> Overview of OOP </a> <br />										
+										<a href="../Classes/Classes and Methods- Classes.html"> Classes and Methods </a> <br />
+										<a href="../Inheritance/Inheritance.html"> Inheritance </a> <br />
+										<a href="../exception/exception.html"> Exception Handling </a> <br />								
+										<a href="The String Class.html"> String Handling </a> <br />
+										<div id="leftmenu2"> <a href="The String Class.html"> The String Class </a> <br />
+											<a href="Immutability.html"> Immutability </a> <br />
+											<a href="String Concatenation.html"> String Concatenation </a> <br />
+											<a href="String Comparison.html"> String Comparison </a> <br />
+											<a href="Important Methods.html"> Important Methods </a> <br />
+											<a href="The StringBuffer Class.html"> The StringBuffer Class </a> <br />
+											<a href="The StringBuilder Class.html"> The StringBuilder Class </a> <br />
+											<a href="Immutable Class Creation.html"> Immutable Class <br />Creation</a> <br />
+											<a href="Point To Be Noted.html"> Point To Be Noted </a> <br />
+											<a href="Exercise1.html"> Exercise </a> <br />
+											</br>
+										</div>
+										<a href="../inner class/innerclass1.html"> Inner Class </a><br />
+										<a href="../New Features/Autoboxing.html">New Features</a> <br />
+									</div>
+								</td>
+								<td class="body1" width="*">
+									<!--style="background-color:#EBEBEB;"-->
+									<span class="header1" >
+									<center>
+										String Handling
+									</center>
+									<table width="750" border="0"><tr>
+									<td width="*" align="left"><a onMouseOver="changeId1()" onMouseOut="changeId2()" class="next" href="The StringBuffer Class.html">PREV</a></td>
+									<td width="*" align="right"><a onMouseOver="changeId1()" onMouseOut="changeId2()" class="next" href="Immutable Class Creation.html">NEXT</a></td>
+									</tr>
+									</table>
+									</span> </br><span class="header2">The StringBuilder Class</span>
+									<div align="right" style="overflow:hidden;position:fixed;left:1100px">
+									<object width="600" height="42">
+
+<embed src="sound strings/string7.mp3" autostart="false" width="350" height="42"
+controller="true" bgcolor="#FFFFFF"></embed>
+</object>
+</div>
+
+									<ul class="list-tick">
+										<li>The java.lang.StringBuilder class should be used when you have to make a <span class="bold">lot of modifications</span> to strings of characters because StringBuilder objects are <span class="bold">mutable</span> in nature.</li>
+										<li>The StringBuilder class is same as String except it is mutable i.e. its value can be changed.</li>
+										<li>A common use for StringBuilder is file I/O when large, ever-changing streams of input are being handled by the program. In these cases, large blocks of characters are handled as units, and StringBuilder objects are the ideal way to handle a block of data, pass it on, and then <span class="bold">reuse the same memory</span> to handle the next block of data.</li>
+										<li>The java.lang.StringBuilder class is final in nature.</li>
+										<li>The StringBuilder class was <span class="bold">added in Java 5</span>. It has exactly the same API as the StringBuffer class, except StringBuffer is <span class="bold">not thread safe</span>. In other words, its methods are not synchronized.</li>
+										<li>Sun recommends that you use StringBuilder instead of StringBuffer whenever possible because StringBuilder will <span class="bold">run faster</span>.</li>
+										<li>Some commonly used constructors of StringBuilder class are:
+										<ol>
+										<li><span class="bold">StringBuilder() :</span> creates an empty StringBuilder object with the initial capacity of 16.</li>
+										<li><span class="bold">StringBuilder(String str) :</span> creates a StringBuilder object with the specified string.</li>
+										<li><span class="bold">StringBuilder(int capacity) :</span> creates an empty StringBuilder object with the specified capacity as length.</li>
+										</ol>
+										</li>
+										<li>Some commonly used methods of StringBuilder class are:<br /><br />
+										<span class="header4">public StringBuilder append(String s):</span>
+										  It is used to <span class="bold">append</span> the argument passed with the invoking string. The append() method is overloaded like append(char), append(boolean), append(int), append(float), append(double) etc.
+											<div class="codeblock">
+												<pre class="code1">  <span class="comment">//Example of append() method</span>
+												
+  <span class="keyword">class</span> Simple{
+  	<span class="keyword">public static void</span> main(String args[]){
+
+		StringBuilder sb = <span class="keyword">new</span> StringBuilder(<span class="quotation">"set "</span>);
+		sb.append(<span class="quotation">"point"</span>);
+		System.out.println(sb); <span class="comment">// output is "set point"</span> 
+
+		StringBuilder sb2 = <span class="keyword">new</span> StringBuilder(<span class="quotation">"pi = "</span>);
+		sb2.append(3.14159f);
+		System.out.println(sb2); <span class="comment">// output is "pi = 3.14159"</span>
+	}
+  }</pre></div>
+  										<a id="download" href="Downloads/7.1.rar">Download</a><br /><br />
+										<span class="header4">public StringBuilder insert(int offset, String s):</span>
+										   It is used to <span class="bold">insert</span> a string within the invoking string at the specified position. The insert() method is overloaded like insert(int, char), insert(int, boolean), insert(int, int), insert(int, float), insert(int, double) etc.
+											<div class="codeblock">
+												<pre class="code1">  <span class="comment">//Example of insert() method</span>
+												
+  <span class="keyword">class</span> Simple{
+  	<span class="keyword">public static void</span> main(String args[]){
+
+		StringBuilder sb = <span class="keyword">new</span> StringBuilder(<span class="quotation">"01234567"</span>);
+		sb.insert(4, <span class="quotation">"abc"</span>);
+		System.out.println( sb ); <span class="comment">// output is "0123abc4567"</span>
+	}
+  }</pre></div>
+  										<a id="download" href="Downloads/7.2.rar">Download</a><br /><br />				
+										<span class="header4">public StringBuilder replace(int startIndex, int endIndex, String str):</span>
+										   It is used to <span class="bold">replace</span> a set of characters with another set inside a StringBuilder object.
+											<div class="codeblock">
+												<pre class="code1">  <span class="comment">//Example of replace() method</span>
+												
+  <span class="keyword">class</span> Simple{
+  	<span class="keyword">public static void</span> main(String args[]){
+
+		StringBuilder sb=<span class="keyword"> new</span> StringBuilder(<span class="quotation">"Hello"</span>);
+		sb.replace(1,3,<span class="quotation">"Java"</span>);
+		System.out.println(sb);<span class="comment">//prints HJavalo</span>
+	}
+  }</pre></div><br />
+										
+                                        <a id="download" href="Downloads/7.3.rar">Download</a><br /><br />
+                                        <span class="header4">public StringBuilder delete(int startIndex, int endIndex):</span>
+										    It is used to <span class="bold">delete</span> a set of characters from a <span class="bold">specified startIndex to endIndex</span>.
+											<div class="codeblock">
+												<pre class="code1">  <span class="comment">//Example of delete() method</span>
+												
+  <span class="keyword">class</span> Simple{
+  	<span class="keyword">public static void</span> main(String args[]){
+
+		StringBuilder sb = <span class="keyword">new</span> StringBuilder(<span class="quotation">"0123456789"</span>);
+		System.out.println(sb.delete(4,6)); <span class="comment">// output is "01236789"</span>
+	}
+  }</pre></div>
+  										<a id="download" href="Downloads/7.4.rar">Download</a><br /><br />
+										<span class="header4">public StringBuilder reverse():</span>
+										     It is used to <span class="bold">reverse</span> the characters within the StringBuilder object i.e., the first character becomes the last, the second becoming the second to the last, and so on.
+											<div class="codeblock">
+												<pre class="code1">  <span class="comment">//Example of reverse() method</span>
+												
+  <span class="keyword">class</span> Simple{
+  	<span class="keyword">public static void</span> main(String args[]){
+
+		StringBuilder sb = <span class="keyword">new</span> StringBuilder(<span class="quotation">"A man a plan a canal Panama"</span>);
+		sb.reverse();
+		System.out.println(sb); <span class="comment">// output: "amanaP lanac a nalp a nam A"</span>
+	}
+  }</pre></div><br />
+										<a id="download" href="Downloads/7.5.rar">Download</a><br /><br />
+                                        <span class="header4">public int capacity():</span>
+										     It is used to <span class="bold">return</span> the <span class="bold">current capacity</span> of the invoking StringBuilder object. The <span class="bold">default capacity</span> of a StringBuilder object is <span class="bold">16</span>. If the length of the object becomes more than the current capacity of the object due to modification then the capacity increases to <span class="bold">(currentcapacity*2) +2</span>. 
+											<div class="codeblock">
+												<pre class="code1">  <span class="comment">//Example of capacity() method</span>
+												
+  <span class="keyword">class</span> Simple{
+  	<span class="keyword">public static void</span> main(String args[]){
+
+		StringBuilder sb= <span class="keyword">new</span> StringBuilder();
+		System.out.println(sb.capacity());<span class="comment">//default 16</span>
+
+		sb.append(<span class="quotation">"Hello"</span>);
+		System.out.println(sb.capacity());<span class="comment">//now 16</span>
+
+		sb.append(<span class="quotation">"java is my favourite language"</span>);
+		System.out.println(sb.capacity());<span class="comment">//now (16*2)+2=34 i.e (oldcapacity*2)+2</span>
+
+	}
+  }</pre></div>
+										<a id="download" href="Downloads/7.6.rar">Download</a><br /><br />
+                                        <span class="header4">public void ensureCapacity(int minimumCapacity):</span>
+										       It is used to ensure that the <span class="bold">minimumcapacity</span> is <span class="bold">less than</span> or <span class="bold">equal to the current capacity</span> of the invoking StringBuilder object. If not the current capacity increases to <span class="bold">(currentcapacity*2) +2</span> and goes on increasing until it becomes greater than or equal to the minimumcapacity.
+											<div class="codeblock">
+												<pre class="code1">  <span class="comment">//Example of ensureCapacity() method</span>
+												
+  <span class="keyword">class</span> Simple{
+  	<span class="keyword">public static void</span> main(String args[]){
+
+		StringBuilder sb= <span class="keyword">new</span> StringBuilder();
+		System.out.println(sb.capacity());<span class="comment">//default 16</span>
+
+		sb.ensureCapacity(10);<span class="comment">//now no change</span>
+		System.out.println(sb.capacity());<span class="comment">//now 16</span>
+
+		sb.ensureCapacity(30);<span class="comment">//now (16*2)+2</span>
+		System.out.println(sb.capacity());<span class="comment">//now 34</span>
+
+	}
+  }</pre></div>
+									<a id="download" href="Downloads/7.7.rar">Download</a><br /><br />
+                					</li>	
+									</ul></br>
+									<table width="750" border="0"><tr>
+									<td width="*" align="left"><a onMouseOver="changeId1()" onMouseOut="changeId2()" class="next" href="The StringBuffer Class.html">PREV</a></td>
+									<td width="*" align="right"><a onMouseOver="changeId1()" onMouseOut="changeId2()" class="next" href="Immutable Class Creation.html">NEXT</a></td>
+									</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td width='*'>&nbsp;</td>
+	</tr>
+</table>
+</body>
+</html>

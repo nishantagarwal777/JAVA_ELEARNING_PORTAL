@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Registration</title>
+<link rel="stylesheet" type="text/css" media="all" href="jsDatePick_ltr.min.css" />
+<link rel="stylesheet" href="../../LinksForChapters.css" type="text/css" />
+<script type="text/javascript" language="JavaScript" src="../../imageSwap.js">
+</script>
+<script type="text/javascript" src="jsDatePick.min.1.3.js"></script>
+<script type="text/javascript">
+//-------------------------- DATE FORMAT------------------------
+
+window.onload = function(){
+		new JsDatePick({
+			useMode:2,
+			target:"textfield6",
+			dateFormat:"%d-%M-%Y"
+		});
+	};
+
+
+//--------------- END OF DATE CHECKING-----------------
+function validationCheck()
+{
+	field=new Array(8);
+	for (loop = 0; loop < 8; loop++) 
+		field[loop] = new Array(2);
+	for(loop=0;loop<8;loop++)
+	{
+			field[loop][0]="textfield"+loop;
+			field[loop][1]="redAlert"+loop;
+			/*document.getElementById("validation").innerHTML="loop="+loop+"value="+field[loop][0];*/
+	}
+	
+	for(loop=0;loop<8;loop++)
+	{
+		if(document.getElementById(field[loop][0]).value=="") 
+		{
+			document.getElementById(field[loop][1]).innerHTML="<br />You can't leave this empty.";
+			document.getElementById("break"+loop).innerHTML="";
+			document.getElementById(field[loop][0]).style.height="26px";
+			document.getElementById(field[loop][0]).size="35";
+			document.getElementById(field[loop][0]).style.borderStyle="solid";
+			document.getElementById(field[loop][0]).style.borderColor="#FF0000";
+			document.getElementById(field[loop][0]).style.borderWidth="thin";
+			document.getElementById("validation").innerHTML=loop;
+		}
+		else
+		{
+			document.getElementById(field[loop][1]).innerHTML="";
+			document.getElementById("break"+loop).innerHTML="<br />";
+			document.getElementById(field[loop][0]).style.height="26px";
+			document.getElementById(field[loop][0]).size="35";
+			document.getElementById(field[loop][0]).style.borderStyle="solid";
+			document.getElementById(field[loop][0]).style.borderColor="#999";
+			document.getElementById(field[loop][0]).style.borderWidth="thin";
+			document.getElementById("validation").innerHTML=loop;
+		}
+	}
+	/*if(document.form1.textfield5.value!=document.form1.textfield4.value)
+	{
+		document.getElementById("redAlert5").innerHTML="<br />These passwords don't match. Try again?";
+		document.form1.textfield5.value="";
+	//	flag=1;
+	document.getElementById("validation").innerHTML="true";
+	}*/
+}
+</script>
+<!--<link rel="SHORTCUT ICON" href="favicon.ico"/> -->
+</link>
+</head>
+<body bgcolor="#faeafd">
+<table width="100%" border="0">
+	<tr>
+		<td width='*'>&nbsp;</td>
+		<td width="950">
+			<table width="950" height="100%" border="0">
+				<tr height="80">
+					<td>
+						<table width="950" height="100%" border="0">
+							<tr class="body1">
+								<td width="37">&nbsp;</td>
+								<td width="442"><img src="../../Pictures/logo.jpg" width="335" height="75" alt="Image Not Found" title="A tutorial which will make learning Java fun"/></td>
+								<td width="471">&nbsp;</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<table width="950" border="0">
+						<tr><td width='*'>&nbsp;</td>
+						<td width="350">
+							<form id="form1" name="form1" method="post" action="UserRegistration.jsp" >
+										<fieldset style="background-color:#FCFCFC;">
+										<span id="validation">ghg</span>
+										<legend><b>User Information </b></legend>								
+											
+											<label style="color:#330033; font-weight:bolder; font-size:16px; line-height:150%">First Name<br /></label>
+											<input style="height:24px;" name="textfield0" id="textfield0" type="text" size="35"  title="Enter your first name here."/>
+											<span id="redAlert0" style="color:#FF0000; line-height:200%;"></span>																				
+											<br />
+											<span id="break0"><br /></span>
+											
+											<label  style="color:#330033; font-weight:bolder; font-size:16px; line-height:150%">Last Name <br /></label>
+											<input style="height:24px;" name="textfield1" id="textfield1" type="text" size="35"  title="Enter your last name here."/>
+											<span id="redAlert1" style="color:#FF0000; line-height:200%;"></span>	
+											<br />
+											<span id="break1"><br /></span>																			
+											
+											<label style="color:#330033; font-weight:bolder; font-size:16px; line-height:150%">Gender<br /></label>											
+											<input name="radiobutton" id="textfield" type="radio" value="male" title="Male" checked="checked" >
+											Male
+											</input>
+											<input name="radiobutton" id="textfield" type="radio" value="female" title="Female">
+											Female
+											</input>
+											<span id="redAlert" style="color:#FF0000; line-height:200%;"></span>	
+											<br />
+											<span id="break"><br /></span>		
+											
+											<label style="color:#330033; font-weight:bolder; font-size:16px; line-height:150%">Email Id<br /></label>
+											<input style="height:24px;" name="textfield2" id="textfield2" type="text" size="35" title="Enter your email id here."/>	
+											<span id="redAlert2" style="color:#FF0000; line-height:200%;"></span>	
+											<br />
+											<span id="break2"><br /></span>																			
+											
+											<label style="color:#330033; font-weight:bolder; font-size:16px; line-height:150%">Confirm your Email Id<br /></label>
+											<input style="height:24px;" name="textfield3" id="textfield3" type="text" size="35" title="Confirm your email id here."/>	
+											<span id="redAlert3" style="color:#FF0000; line-height:200%;"></span>	
+											<br />
+											<span id="break3"><br /></span>																			
+
+											<label style="color:#330033; font-weight:bolder; font-size:16px; line-height:150%">Password<br /></label>
+											<input name="textfield4" type="password" id="textfield4" style="height:24px;" title="Enter your password here." size="35"/>	
+											<span id="redAlert4" style="color:#FF0000; line-height:200%;"></span>	
+											<br />
+											<span id="break4"><br /></span>																			
+																	
+											<label style="color:#330033; font-weight:bolder; font-size:16px; line-height:150%">Confirm Password<br /></label>
+											<input name="textfield5" type="password" id="textfield5" style="height:24px;" title="Confirm your password here." size="35"/>	
+											<span id="redAlert5" style="color:#FF0000; line-height:200%;"></span>	
+											<br />
+											<span id="break5"><br /></span>																					
+											
+											<label style="color:#330033; font-weight:bolder; font-size:16px; line-height:150%">Date Of Birth<br /></label>
+											<input style="height:24px;" name="textfield6" id="textfield6" type="text" size="35" title="Enter you D-O-B."/>	
+											<span id="redAlert6" style="color:#FF0000; line-height:200%;"></span>	
+											<br />
+											<span id="break6"><br /></span>																																
+											
+											<label style="color:#330033; font-weight:bolder; font-size:16px; line-height:150%">Telephone<br /></label>
+											<input style="height:24px;" name="textfield7" id="textfield7" type="text" size="35" title="Enter your telephone number. Format: 0123456789"/>	
+											<span id="redAlert7" style="color:#FF0000; line-height:200%;"></span>	
+											<br />
+											<span id="break7"><br /></span>															
+																														
+											<p align="center">
+											<input name="Button1" type="button" onclick="validationCheck()" value="Register"/>
+											</p>										
+											</fieldset>
+									</form>
+									</td>
+									<td width='*'>&nbsp;</td></tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td width='*'>&nbsp;</td>
+	</tr>
+</table>
+</body>
+</html>

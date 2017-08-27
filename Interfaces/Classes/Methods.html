@@ -1,0 +1,266 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Classes and Methods---Methods</title>
+<script type="text/javascript" language="JavaScript" src="../../imageSwap.js">
+</script>
+<link rel="stylesheet" href="../../LinksForChapters.css" type="text/css" />
+</link>
+</head>
+<body bgcolor="#faeafd">
+<table width="100%" border="0">
+	<tr>
+		<td width='*'>&nbsp;</td>
+		<td width="950">
+			<table width="950" height="100%" border="0">
+				<tr height="80">
+					<td>
+						<table width="950" height="100%" border="0">
+							<tr class="body1">
+								<td width="37">&nbsp;</td>
+								<td width="442"><img src="../../Pictures/logo.jpg" width="335" height="75" alt="Image Not Found" title="A tutorial which will make learning Java fun"/></td>
+								<td width="471">
+									<p align="right"><a href="../Change_Password/Change_Password.jsp"  onmouseover="imageSwapOnMouseOver(Image6,11)" onMouseOut="imageSwapOnMouseOut(Image6,10)"><img src="../../Pictures/change password.png" alt="Image Not Found" name="Image6" width="200" height="20" border="0" id="Image6"  title="Change your password"/></a> <a href="../Home/Log In.jsp" onmouseover="imageSwapOnMouseOver(Image1,0)" onMouseOut="imageSwapOnMouseOut(Image1,5)"><img src="../../Pictures/logout.png" alt="Image Not Found" name="Image1" width="101" height="20" border="0" id="Image1"  title="Log out from the site"/></a></p>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr height="44">
+					<td>
+						<table width="950" border="0" height="100%">
+							<tr class="body1">
+								<td width="10">&nbsp;</td>
+								<td width="940">
+									<a href="../Home/home.jsp" onMouseOver="imageSwapOnMouseOver(Image2,1)" onMouseOut="imageSwapOnMouseOut(Image2,6)"><img src="../../Pictures/home - Copy.png" alt="Image Not Found" name="Image2" width="99" height="21" border="0" id="Image2"  title="Go back to Home Page"/></a> <a href="../Basics Of Java/What is Java.html" onMouseOver="imageSwapOnMouseOver(Image3,2)" onMouseOut="imageSwapOnMouseOut(Image3,7)"><img src="../../Pictures/java tutorial.png" alt="Image Not Found" name="Image3" width="190" height="21" border="0" id="Image3" title="Go to the tutorial" /></a> <a href="../Exam_Cell/index.jsp" onMouseOver="imageSwapOnMouseOver(Image4,3)" onMouseOut="imageSwapOnMouseOut(Image4,8)"><img src="../../Pictures/self-assessment test.png" alt="Image Not Found" name="Image4" width="349" height="21" border="0" id="Image4"  title="Take an assessment test to judge your knowledge"/></a> <a href="../Exam_Cell/previous_results_main.jsp" onMouseOver="imageSwapOnMouseOver(Image5,4)" onMouseOut="imageSwapOnMouseOut(Image5,9)"><img src="../../Pictures/history of result.png" alt="Image Not Found" name="Image5" width="265" height="21" border="0" id="Image5"  title="See the result of the previous examinations taken by you"/></a>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<table width="950" border="0">
+							<tr>
+								<td class="index1" width="160">
+									<div id="leftmenu"> <a href="../Basics Of Java/What is Java.html">Basics Of Java</a> <br />
+										<a href="../Oop/Encapsulation.html"> Overview of OOP </a> <br />
+										<a href="Classes and Methods- Classes.html"> Classes and Methods </a> <br />
+										<div id="leftmenu2"> <a href="Classes and Methods- Classes.html"> Classes </a> <br />
+											<a href="Objects.html"> Objects </a> <br />
+											<a href="Methods.html"> Methods </a> <br />
+											<a href="Constructor.html"> Constructor </a> <br />
+											<a href="Overloading.html"> Overloading </a> <br />
+											<a href="Main.html"> The Main Method </a> <br />
+											<a href="Finalize.html"> The Finalize Method</a> <br />
+											<a href="this.html"> This</a> <br />
+											<a href="Exercise1.html"> Exercise </a> <br />
+											</br>
+										</div>
+										<a href="../Inheritance/Inheritance.html"> Inheritance </a> <br />
+										<a href="../exception/exception.html"> Exception Handling </a> <br />
+										<a href="../String Handling/The String Class.html"> String Handling </a> <br />
+										<a href="../inner class/innerclass1.html"> Inner Class </a><br />
+                                        <a href="../New Features/Autoboxing.html"> New Features </a><br />									
+                                     </div>
+								</td>
+								<td class="body1" width="*">
+									<!--style="background-color:#EBEBEB;"-->
+									<span class="header1" >
+									<center>
+										Classes and Methods
+									</center>
+									<table width="750" border="0"><tr>
+									<td width="*" align="left"><a onMouseOver="changeId1()" onMouseOut="changeId2()" class="next" href="Objects.html">PREV</a></td>
+									<td width="*" align="right"><a onMouseOver="changeId1()" onMouseOut="changeId2()" class="next" href="Constructor.html">NEXT</a></td>
+									</tr>
+									</table>
+									</span> </br><span class="header2">Methods</span>
+									<div align="right" style="overflow:hidden;position:fixed;left:1100px">
+									<object width="600" height="42">
+
+<embed src="sound class/class3.mp3" autostart="false" width="350" height="42"
+controller="true" bgcolor="#FFFFFF"></embed>
+</object>
+</div>
+									<ul class="list-tick">
+										<li>A Java <span class="bold">method</span> is a collection of statements that are grouped together to perform an operation.</li>
+										
+									<li><span class="header3">The parts of a Method: :</span><br /><br />
+									There are five parts in a complete method:
+								<ol>
+									<li><span class="bold">Modifiers</span>: The modifier, which is optional, tells the compiler how to call the method.</li>
+									<li><span class="bold">Return Type</span>: A method may return a value. The returnValueType is the data type of the value the method returns.</li>
+									<li><span class="bold">Method Name</span>: This is the actual name of the method. The method name and the parameter list together constitute the method signature.</li>
+									<li><span class="bold">Parameters</span>: A parameter is like a placeholder.Parameters are optional; that is, a method may contain no parameters. </li>
+									<li><span class="bold">Method Body</span>: The method body contains a collection of statements that define what the method does.</li>
+									<img src="class.jpg" />
+										</ol>
+										</li>
+										<li><span class="header3">Representation of a Method :</span>
+										<div class="codeblock">
+											<pre class="code1">  <span class="comment">//Syntax of Method</span>
+  
+  <span class="keyword">modifier returnValueType</span> method_name(list_of_parameters){
+	  // Method Body;
+ 	  }</pre></div></br></li>
+										<li>Accessing Instance Variables and Methods
+										<br /><br /><ol>Instance variables and methods are accessed via created objects. To access an instance variable the fully qualified path should be as follows:
+										<div class="codeblock">
+											<pre class="code1">  <span class="comment">//Example of creating an object is given below:</span>
+		
+	ObjectReference = new Constructor();  <span class="comment">//First create an object </span>
+	ObjectReference.variableName;     <span class="comment">   //Now call a variable as follows </span>	
+	ObjectReference.MethodName();     <span class="comment">//Now you can call a class method as follows </span>				
+  </pre></div></br>
+  </ol>
+  </li>
+  
+										<li><span class="header3">Method calling :</span>
+										<br/><br />In creating a method, you give a definition of 
+										what the method is to do. To use a method, you have to call or invoke it.
+								<li>There are two ways to <span class="bold">call</span> a method :</li>
+									<ol>
+									<li>If the method returns a <span class="bold">value</span>, a call to the method is usually treated as a value.</li>
+									<div class="codeblock">
+											<pre class="code1">  <span class="comment">//Example of calling a method which returns a value :</span>
+
+  <span class="keyword">class</span> Simple{
+	  <span class="keyword">public int</span> max(int num1,int num2){
+  		<span class="keyword">int</span> result;
+		if(num1>num2)
+			result=num1;
+		else 
+			result=num2;
+		
+		<span class="keyword">return</span> result;
+		
+	  }
+	  <span class="keyword">public class</span> Demo{
+  
+	  <span class="keyword">public static void</span> main(String args[]){
+	  
+	  	Simple ob1=new Simple();
+		<span class="keyword">int</span> larger;
+		larger=ob1.max(30,40); <span class="comment">/*max method of class Simple 
+							accessed via object ob1 
+      							returns a value of type 
+  							integer,which is stored 
+        						in the variable larger.*/</span>
+		System.out.println(larger);
+		
+		}	 </pre></div></br></ol>
+									</li>
+		<a href="method1.zip">Download</a>
+						<li>If the method returns <span class="bold">void</span>, a call to the method must be a statement.</li> 
+			     		    For example : The method <span class="bold">println</span> returns <span class="bold">void</span>. The following call is a statement:
+							System.out.println("Welcome to Java!");</ol></li>
+							<li><span class="header3">Overloading Methods:</span>
+							<ol>
+							<br />The Java programming language supports overloading methods, and Java can distinguish between methods with <span class="bold">different method signatures</span>.
+							<br /><br />The max method that was used earlier works only with the <span class="keyword"> int </span>data type. But what if you need to find which of two <span class="keyword">floating-point</span> numbers has the maximum value? The solution is to create another method with the same name but different parameter.<br />
+							<br />For example :</ol></li>
+							<div class="codeblock">
+							<pre class="code1">  <span class="comment">//The following example explains method overloading :</span>
+										
+   <span class="keyword">class</span> Simple{
+	  <span class="keyword">public double</span> max(double num1, double num2){
+  		<span class="keyword">double</span> result;
+		if(num1>num2)
+			result=num1;
+		else 
+			result=num2;
+		
+		<span class="keyword">return</span> result;
+	  }
+	  
+	   <span class="keyword">public int</span> max(int num1, int num2){
+  		<span class="keyword">int</span> result1;
+		if(num1>num2)
+			result=num1;
+		else 
+			result=num2;
+		
+		<span class="keyword">return</span> result1;
+	   }
+	   
+	  }
+
+  <span class="keyword">public class</span> Demo{
+  
+	  <span class="keyword">public static void</span> main(String args[]){
+	  
+	  	Simple ob1=new Simple();
+		<span class="keyword">int</span> larger;
+		<span class="keyword">double</span> larger2;
+		larger=ob1.max(30,40); <span class="comment">/*It calls the method 
+                                            which take integer as parameter.*/</span>
+		System.out.println(larger);
+		larger2=ob1.max(10.2,4.2); <span class="comment">/*It calls the method 
+                                                  which take double as parameter.*/</span>
+		System.out.println(larger2);
+		
+		}	 </pre></div></br>
+			<a href="method2.zip">Download</a>
+			<br/><br/>
+								
+	   <br />If you call max with int parameters, the max method that expects <span class="bold">int</span> 
+	   parameters will be invoked; if you call max with <span class="bold">double</span> parameters, 
+	   the max method that expects double parameters will be invoked.
+	   
+	   							<li><span class="header3">Recursive Methods.</span>
+								 <br /><br />
+								 Java supports recursive methods, i.e. even if you're already inside methodA() you can call methodA().<br /><br />
+								 Example:
+								 <div class="codeblock">
+											<pre class="code1">  <span class="comment">//The following example explains recursive method :</span>
+										
+   <span class="keyword">class</span> Simple{
+	  <span class="keyword">public long</span> factorial (int n) {
+  		if (n < 0) {
+       return -1;
+      } 
+      else if (n == 0) {
+      return 1;
+      }
+      else {
+      return n*factorial(n-1);
+    }
+ 
+   }       
+
+  <span class="keyword">public class</span> Demo{
+  
+	  <span class="keyword">public static void</span> main(String args[]){
+	  
+	  	Simple ob1=new Simple();
+		<span class="keyword">int</span> larger;
+		larger=ob1.factorial(5); <!--<span class="comment">//It calls the method which take integer as parameter.</span>-->
+		
+		}
+		}	 </pre></div></br></li>
+		<a href="method3.zip">Download</a>
+		
+		
+	   
+	   			
+										</ul>
+									</br>
+									<table width="750" border="0"><tr>
+									<td width="*" align="left"><a onMouseOver="changeId1()" onMouseOut="changeId2()" class="next" href="Objects.html">PREV</a></td>
+									<td width="*" align="right"><a onMouseOver="changeId1()" onMouseOut="changeId2()" class="next" href="Constructor.html">NEXT</a></td>
+									</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td width='*'>&nbsp;</td>
+	</tr>
+</table>
+</body>
+</html>

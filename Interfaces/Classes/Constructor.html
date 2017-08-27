@@ -1,0 +1,247 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Classes and Methods---Constructor</title>
+<script type="text/javascript" language="JavaScript" src="../../imageSwap.js">
+</script>
+<link rel="stylesheet" href="../../LinksForChapters.css" type="text/css" />
+</link>
+</head>
+<body bgcolor="#faeafd">
+<table width="100%" border="0">
+	<tr>
+		<td width='*'>&nbsp;</td>
+		<td width="950">
+			<table width="950" height="100%" border="0">
+				<tr height="80">
+					<td>
+						<table width="950" height="100%" border="0">
+							<tr class="body1">
+								<td width="37">&nbsp;</td>
+								<td width="442"><img src="../../Pictures/logo.jpg" width="335" height="75" alt="Image Not Found" title="A tutorial which will make learning Java fun"/></td>
+								<td width="471">
+									<p align="right"><a href="../Change_Password/Change_Password.jsp"  onmouseover="imageSwapOnMouseOver(Image6,11)" onMouseOut="imageSwapOnMouseOut(Image6,10)"><img src="../../Pictures/change password.png" alt="Image Not Found" name="Image6" width="200" height="20" border="0" id="Image6"  title="Change your password"/></a> <a href="../Home/Log In.jsp" onmouseover="imageSwapOnMouseOver(Image1,0)" onMouseOut="imageSwapOnMouseOut(Image1,5)"><img src="../../Pictures/logout.png" alt="Image Not Found" name="Image1" width="101" height="20" border="0" id="Image1"  title="Log out from the site"/></a></p>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr height="44">
+					<td>
+						<table width="950" border="0" height="100%">
+							<tr class="body1">
+								<td width="10">&nbsp;</td>
+								<td width="940">
+									<a href="../Home/home.jsp" onMouseOver="imageSwapOnMouseOver(Image2,1)" onMouseOut="imageSwapOnMouseOut(Image2,6)"><img src="../../Pictures/home - Copy.png" alt="Image Not Found" name="Image2" width="99" height="21" border="0" id="Image2"  title="Go back to Home Page"/></a> <a href="../Basics Of Java/What is Java.html" onMouseOver="imageSwapOnMouseOver(Image3,2)" onMouseOut="imageSwapOnMouseOut(Image3,7)"><img src="../../Pictures/java tutorial.png" alt="Image Not Found" name="Image3" width="190" height="21" border="0" id="Image3" title="Go to the tutorial" /></a> <a href="../Exam_Cell/index.jsp" onMouseOver="imageSwapOnMouseOver(Image4,3)" onMouseOut="imageSwapOnMouseOut(Image4,8)"><img src="../../Pictures/self-assessment test.png" alt="Image Not Found" name="Image4" width="349" height="21" border="0" id="Image4"  title="Take an assessment test to judge your knowledge"/></a> <a href="../Exam_Cell/previous_results_main.jsp" onMouseOver="imageSwapOnMouseOver(Image5,4)" onMouseOut="imageSwapOnMouseOut(Image5,9)"><img src="../../Pictures/history of result.png" alt="Image Not Found" name="Image5" width="265" height="21" border="0" id="Image5"  title="See the result of the previous examinations taken by you"/></a>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<table width="950" border="0">
+							<tr>
+								<td class="index1" width="160">
+									<div id="leftmenu"> <a href="../Basics Of Java/What is Java.html">Basics Of Java</a> <br />
+										<a href="../Oop/Encapsulation.html"> Overview of OOP </a> <br />
+										<a href="Classes and Methods- Classes.html"> Classes and Methods </a> <br />
+										<div id="leftmenu2"> <a href="Classes and Methods- Classes.html"> Classes </a> <br />
+											<a href="Objects.html"> Objects </a> <br />
+											<a href="Methods.html"> Methods </a> <br />
+											<a href="Constructor.html"> Constructor </a> <br />
+											<a href="Overloading.html"> Overloading </a> <br />
+											<a href="Main.html"> The Main Method </a> <br />
+											<a href="Finalize.html"> The Finalize Method</a> <br />
+											<a href="this.html"> This</a> <br />
+											<a href="Exercise1.html"> Exercise </a> <br />
+											</br>
+										</div>
+										<a href="../Inheritance/Inheritance.html"> Inheritance </a> <br />
+										<a href="../exception/exception.html"> Exception Handling </a> <br />
+										<a href="../String Handling/The String Class.html"> String Handling </a> <br />
+										<a href="../inner class/innerclass1.html"> Inner Class </a><br />
+                                        <a href="../New Features/Autoboxing.html"> New Features </a><br />									
+                                     </div>
+								</td>
+								<td class="body1" width="*">
+									<!--style="background-color:#EBEBEB;"-->
+									<span class="header1" >
+									<center>
+										Classes and Methods
+									</center>
+									<table width="750" border="0"><tr>
+									<td width="*" align="left"><a onMouseOver="changeId1()" onMouseOut="changeId2()" class="next" href="Methods.html">PREV</a></td>
+									<td width="*" align="right"><a onMouseOver="changeId1()" onMouseOut="changeId2()" class="next" href="Overloading.html">NEXT</a></td>
+									</tr>
+									</table>
+									</span> </br><span class="header2">Constructors</span>
+									<div align="right" style="overflow:hidden;position:fixed;left:1100px">
+									<object width="600" height="42">
+
+<embed src="sound class/class4.mp3" autostart="false" width="350" height="42"
+controller="true" bgcolor="#FFFFFF"></embed>
+</object>
+</div>
+									<ul class="list-tick">
+										<li>A <span class="bold">constructor</span> initializes an object when it is created.</li>
+										<li>It has the <span class="bold">same name</span> as its class and is syntactically similar to a method. </li>
+										<li>However, constructors have <span class="bold">no</span> explicit <span class="bold">return type</span>.</li>
+										
+									<li><span class="header3">Types of constructors:</span><br /><br />
+									There are two types of constuctor:
+								<ol>
+									<li><span class="bold">Default</span> constructor.</li>
+									<li><span class="bold">Parameterized</span> constructor.</li>
+								</ol>
+										
+										<li><span class="header3">Default constructor :</span>
+										<br/><br/>It has <span class="bold">no parameters</span>.
+										<div class="codeblock">
+											<pre class="code1">  <span class="comment">//Syntax of Constuctor:</span>
+      	class_name(){
+		
+	  	// Body;
+ 	    }</pre></div></br>
+	  									<div class="codeblock">
+										<pre class="code1">  <span class="comment">//Example of a constuctor:</span>
+  
+   <span class="keyword">class</span> Bike{
+   Bike()
+   {
+   		<span class="keyword">System.out.println</span>("Bike is created");
+   }
+   <span class="keyword">public static void</span> main( <span class="keyword">String</span>  args[]) {
+   		Bike b=<span class="keyword">new</span> Bike();
+	
+    }
+	}</pre></div></br></li>
+	<a href="constructor1.zip">Download</a>
+	<br/><br/>
+										 
+									<li><span class="header3">Why is constuctor called ? </span>
+									<br/><br />You would call constructor to initialize objects as follows:
+									<div class="codeblock">
+										<pre class="code1">  <span class="comment">//Explaining the concept::</span>
+
+  <span class="keyword">class</span> MyClass{
+	  <span class="keyword">int</span> x;
+  		
+		MyClass() {
+		x = 10;
+       }
+     }
+   <span class="keyword">public class</span> ConsDemo {
+   		<span class="keyword">public static void</span> main(<span class="keyword">String</span> args[]) {
+		MyClass t1 = new MyClass();
+        MyClass t2 = new MyClass();
+		<span class="keyword">System.out.println</span> (t1.x + " " + t2.x);
+		}
+		}
+		
+		</pre></div></br></li>
+		<a href="constructor2.zip">Download</a>
+		<br/><br/>
+							<li><span class="header3">Purpose of default constructors :</span>
+							<br /><br/>It provides default value to objects.
+							<div class="codeblock">
+							<pre class="code1">  <span class="comment">//The following example explains the purpose of default constructor :</span>
+										
+   <span class="keyword">class</span> Student{
+	  <span class="keyword">int</span> id;
+  	  <span class="keyword">String</span> name;
+	  <span class="keyword">void</span> display() { 
+	  <span class="keyword"> System.out.println</span> (id+“”+name);
+		}
+	  
+	   <span class="keyword">public static void </span> main(String</span> args[]) {
+  		 Student s1=new Student();
+         Student s2=new Student();
+		 S1.display();
+		 S2.display();
+		}
+		} 
+		 </pre></div></br></li>
+		 <a href="constructor3.zip">Download</a>
+		<br/><br/>
+		
+								<li><span class="header3">Parameterized Constructor:</span>
+								 <br /><br />
+								 <ol>
+							     <li>Most often you will need a constructor that accepts <span class="bold">one or more</span> parameters. </li>
+								 <li>Parameters are added to a constructor in the same way that they are added to a method.<br /><br /></li></ol>
+								 Example:
+								 <div class="codeblock">
+											<pre class="code1">  <span class="comment">//The following example explains constructor taking parameters :</span>
+										
+   <span class="keyword">class</span> MyClass {
+	  <span class="keyword">int</span> x;
+  		   MyClass(int i ) {
+           x = i;
+      }
+   }       
+
+     <span class="keyword">public class</span> Demo{
+  
+	  <span class="keyword">public static void</span> main(String args[]){
+	  
+	  	MyClass t1 = new MyClass( 10 );
+                MyClass t2 = new MyClass( 20 );
+        <span class="keyword">System.out.println</span> (t1.x + " " + t2.x);
+       }
+  }
+ </pre></div></br></li></ol>
+ <a href="constructor4.zip">Download</a>
+		<br/><br/>
+ 										
+		                                 <li><span class="header3">Difference between constructor and method:</span>
+								 <br /><br />
+		
+	                                    <table width="710" border="=2">
+										<tr>
+										<td><span class="keyword">CONSTRUCTOR</span></td>
+										<td><span class="keyword">METHOD</span></td>
+										</tr>
+										<tr>
+										<td>It is used to initialize the state of an object.</td>
+										<td>It is used to expose behavior of an object.</td>
+										</tr>
+										<tr>
+										<td>It does not have a return type.</td>
+										<td>It must have a return type, even if that is void.</td>
+										</tr>
+										<tr>
+										<td>It is invoked implicitly.</td>
+										<td>It is invoked explicitly.</td>
+										</tr>
+										<tr>
+										<td>The java compiler provides a default constructor if you don’t have any constructor.</td>
+										<td>Method is not provided by the compiler in any case.</td>
+										</tr>
+										<tr>
+										<td>The name must be same as the class name.</td>
+										<td>It may or may not be same as the class name.</td>
+										</tr>
+										</table>
+										<br/>
+										<br/>
+	   			
+									</ul></br>
+									<table width="750" border="0"><tr>
+									<td width="*" align="left"><a onMouseOver="changeId1()" onMouseOut="changeId2()" class="next" href="Methods.html">PREV</a></td>
+									<td width="*" align="right"><a onMouseOver="changeId1()" onMouseOut="changeId2()" class="next" href="Overloading.html">NEXT</a></td>
+									</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td width='*'>&nbsp;</td>
+	</tr>
+</table>
+</body>
+</html>

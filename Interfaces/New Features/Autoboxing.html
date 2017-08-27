@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head >
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Autoboxing</title>
+<script type="text/javascript" language="JavaScript" src="../../imageSwap.js">
+</script>
+<!--<link rel="SHORTCUT ICON" href="favicon.ico"/> -->
+<link rel="stylesheet" href="../../LinksForChapters.css" type="text/css" />
+</link>
+</head>
+<body bgcolor="#faeafd">
+<table width="100%" border="0">
+	<tr>
+		<td width='*'>&nbsp;</td>
+		<td width="950">
+			<table width="950" height="100%" border="0">
+				<tr height="80">
+					<td>
+						<table width="950" height="100%" border="0">
+							<tr class="body1">
+								<td width="37">&nbsp;</td>
+								<td width="442"><img src="../../Pictures/logo.jpg" width="335" height="75" alt="Image Not Found" title="A tutorial which will make learning Java fun"/></td>
+								<td width="471">
+									<p align="right"><a href="../Change_Password/Change_Password.jsp"  onmouseover="imageSwapOnMouseOver(Image6,11)" onMouseOut="imageSwapOnMouseOut(Image6,10)"><img src="../../Pictures/change password.png" alt="Image Not Found" name="Image6" width="200" height="20" border="0" id="Image6"  title="Change your password"/></a> <a href="../Home/Log In.jsp"  onmouseover="imageSwapOnMouseOver(Image1,0)" onMouseOut="imageSwapOnMouseOut(Image1,5)"><img src="../../Pictures/logout.png" alt="Image Not Found" name="Image1" width="101" height="20" border="0" id="Image1"  title="Log out from the site"/></a></p>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr height="44">
+					<td>
+						<table width="950" border="0" height="100%">
+							<tr class="body1">
+								<td width="10">&nbsp;</td>
+								<td width="940">
+									<a href="../Home/home.jsp" onMouseOver="imageSwapOnMouseOver(Image2,1)" onMouseOut="imageSwapOnMouseOut(Image2,6)"><img src="../../Pictures/home - Copy.png" alt="Image Not Found" name="Image2" width="99" height="21" border="0" id="Image2"  title="Go back to Home Page"/></a> <a href="../Basics Of Java/What is Java.html" onMouseOver="imageSwapOnMouseOver(Image3,2)" onMouseOut="imageSwapOnMouseOut(Image3,7)"><img src="../../Pictures/java tutorial.png" alt="Image Not Found" name="Image3" width="190" height="21" border="0" id="Image3" title="Go to the tutorial" /></a> <a href="../Exam_Cell/index.jsp" onMouseOver="imageSwapOnMouseOver(Image4,3)" onMouseOut="imageSwapOnMouseOut(Image4,8)"><img src="../../Pictures/self-assessment test.png" alt="Image Not Found" name="Image4" width="349" height="21" border="0" id="Image4"  title="Take an assessment test to judge your knowledge"/></a> <a href="../Exam_Cell/previous_results_main.jsp" onMouseOver="imageSwapOnMouseOver(Image5,4)" onMouseOut="imageSwapOnMouseOut(Image5,9)"><img src="../../Pictures/history of result.png" alt="Image Not Found" name="Image5" width="265" height="21" border="0" id="Image5"  title="See the result of the previous examinations taken by you"/></a>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<table width="950" border="0">
+							<tr>
+								<td class="index1" width="160">
+									<div id="leftmenu"> <a href="../Basics Of Java/What is Java.html">Basics Of Java</a> <br />
+										<a href="../Oop/Encapsulation.html"> Overview of OOP </a> <br />										
+										<a href="../Classes/Classes and Methods- Classes.html"> Classes and Methods </a> <br />
+										<a href="../Inheritance/Inheritance.html"> Inheritance </a> <br />
+										<a href="../exception/exception.html"> Exception Handling </a> <br />
+										<a href="../String Handling/The String Class.html"> String Handling </a> <br />						
+										<a href="../inner class/innerclass1.html"> Inner Class </a><br />
+										<a href="Autoboxing.html">New Features</a> <br />
+										<div id="leftmenu2"> <a href="Autoboxing.html"> Autoboxing </a> <br />											
+											<a href="Point To Be Noted.html"> Point To Be Noted </a> <br />											
+											</br>
+										</div>
+									</div>
+								</td>
+								<td class="body1" width="*">
+									<!--style="background-color:#EBEBEB;"-->
+									<span class="header1" >
+									<center>
+										New Features
+									</center>
+									<table width="750" border="0"><tr>
+									<td width="*" align="right"><a onMouseOver="changeId1()" onMouseOut="changeId2()" class="next" href="Point To Be Noted.html">NEXT</a></td>
+									</tr>
+									</table>
+									</span> </br><span class="header2">Autoboxing</span>
+									<div align="right" style="overflow:hidden;position:fixed;left:1100px">
+									<object width="600" height="42">
+
+<embed src="sound/autoboxing_audio.mp3" autostart="false" width="350" height="42"
+controller="true" bgcolor="#FFFFFF"></embed>
+</object>
+</div>
+
+									<ul class="list-tick">
+										<li>The <span class="bold">automatic conversion of primitive data types</span> into its <span class="bold">equivalent Wrapper type</span> is known as <span class="bold">boxing</span> and opposite operation is known as <span class="bold">unboxing</span>. This feature has been <span class="bold">added in Java 5</span>.So java programmer doesn't need to write the conversion code. It is also known as <span class="bold">autoboxing</span>, <span class="bold">auto-unboxing</span>, <span class="bold">boxing</span> and <span class="bold">unboxing</span>.</li>										
+										<li>Boxing and unboxing make using wrapper classes more convenient. In the old, pre-Java 5 days, if you wanted to make a wrapper, unwrap it, use it, and then rewrap it, you might do something like this: <br /><br />										
+											<div class="codeblock">
+												<pre class="code1">  Integer y = <span class="keyword">new</span> Integer(567);<span class="comment"> // make it</span>
+  <span class="keyword">int</span> x = y.intValue(); <span class="comment">// unwrap it</span>
+  x++; <span class="comment">// use it</span>
+  y = <span class="keyword">new</span> Integer(x); <span class="comment">// re-wrap it</span>
+  System.out.println(<span class="quotation">"y = "</span> + i); <span class="comment">// print it</span>	
+</pre></div>
+Now, with new and improved Java 5 you can say
+  									<div class="codeblock">
+												<pre class="code1">  Integer y = <span class="keyword">new</span> Integer(567); <span class="comment">// make it</span>
+  y++; <span class="comment">// unwrap it, increment it,</span>
+  <span class="comment">// rewrap it</span>
+  System.out.println(<span class="quotation">"y = "</span> + i); <span class="comment">// print it</span></pre></div>
+  Both examples produce the output:<span class="bold"> y = 568</span><br /><br />
+  
+  <span class="bold">Internally</span> what happens when the compiler arrives at the line i++ is that the line is
+substituted by something like this:
+									<div class="codeblock">
+												<pre class="code1">  <span class="keyword">int</span> x2 = y.intValue(); <span class="comment">// unwrap it</span>
+  x2++;<span class="comment"> // use it</span>
+  y = <span class="keyword">new</span> Integer(x2); <span class="comment">// re-wrap it</span></pre></div>
+									</li>
+									<li>Autoboxing can be performed with <span class="bold">comparison operators</span>. <br /><br />Let's see the example of boxing with comparison operator:
+									<div class="codeblock">
+												<pre class="code1">  <span class="keyword">class</span> UnboxingExample1
+  {
+	<span class="keyword">public static void</span> main(String args[])
+	{
+		Integer i=<span class="keyword">new</span> Integer(50);
+		if(i&lt;100)
+		{<span class="comment"> //unboxing internally</span>
+			System.out.println(i);
+		}
+	}
+  }</pre></div></li>
+									<li>We have to know is that the intention of the equals() method is to determine whether two instances of a given class are <span class="bold">"meaningfully equivalent" </span>. This definition is intentionally subjective; it's up to the creator of the class to determine what "equivalent" means for objects of the class in question. The API developers decided that for all the wrapper classes, two objects are equal if they are of the same type and have the same value. It shouldn't be surprising that	<br /><br />
+									<div class="codeblock">
+												<pre class="code1">  Integer i1 = 1000;
+  Integer i2 = 1000;
+  if(i1 != i2) 
+  	System.out.println(<span class="quotation">"different objects"</span>);
+  if(i1.equals(i2)) 
+  	System.out.println(<span class="quotation">"meaningfully equal"</span>);</pre></div><br />
+Produces the <span class="bold">output</span>:<br />
+different objects<br />
+meaningfully equal<br /><br />
+
+It's just two wrapper objects that happen to have the same value. Because they have the same int value, the equals() method considers them to be <span class="bold">"meaningfully equivalent"</span>, and therefore <span class="bold">returns true</span> .</li>
+									<li>In order to save memory, two instances of the following wrapper objects will always be == when their primitive values are the same:
+									<ol>
+									<li><span class="bold">Boolean</span></li>
+									<li><span class="bold">Byte</span></li>
+									<li>Character from <span class="bold">\u0000 to \u007f</span> (7f is 127 in decimal)</li>
+									<li>Short and Integer from <span class="bold">-128 to 127</span></li>
+									</ol>
+									<div class="codeblock">
+												<pre class="code1">  Integer i3 = 10;
+  Integer i4 = 10;
+  if(i3 == i4) 
+  	System.out.println(<span class="quotation">"same object"</span>);
+  if(i3.equals(i4)) 
+  	System.out.println(<span class="quotation">"meaningfully equal"</span>);</pre></div><br />
+
+This example produces the <span class="bold">output</span>:<br />
+same object<br />
+meaningfully equal<br />
+									</li>
+									<li>When == is used to compare a primitive to a wrapper, the wrapper will be unwrapped and the comparison will be primitive to primitive.</li>
+									<li>The following code demonstrates <span class="bold">some legal ways to use boxing</span>:
+									<div class="codeblock">
+												<pre class="code1">  <span class="keyword">class</span> UseBoxing {
+	<span class="keyword">public static void</span> main(String [] args) 
+	{
+		UseBoxing u = <span class="keyword">new</span> UseBoxing();
+		u.go(5);
+	}
+	
+	<span class="keyword">boolean</span> go(Integer i) 
+	{<span class="comment"> // boxes the int it was passed</span>
+		Boolean ifSo = <span class="keyword">true</span>;<span class="comment"> // boxes the literal</span>
+		Short s = 300; <span class="comment">// boxes the primitive</span>
+		if(ifSo) 
+		{ <span class="comment">// unboxing</span>
+			System.out.println(++s); <span class="comment">// unboxes, increments, reboxes</span>
+		}
+		<span class="keyword">return</span> !ifSo;<span class="comment"> // unboxes, returns the inverse</span>
+	}
+  }</pre></div>
+                					</li>	
+									</ul></br>
+									<table width="750" border="0"><tr>
+									<td width="*" align="right"><a onMouseOver="changeId1()" onMouseOut="changeId2()" class="next" href="Point To Be Noted.html">NEXT</a></td>
+									</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td width='*'>&nbsp;</td>
+	</tr>
+</table>
+</body>
+</html>
+>
