@@ -1,0 +1,210 @@
+/* CSS Document */
+
+.next{
+	font:13px/1.5 Verdana;
+	background-color:#9f9f00;
+	padding:3px 30px;
+	color:white;
+	font-weight:bold;
+	text-decoration:none;
+	outline:pink double;
+}
+.next1{
+	font:13px/1.5 Verdana;
+	background-color:#66bb33;
+	padding:3px 30px;
+	color:white;
+	font-weight:bold;
+	text-decoration:none;
+	outline:pink double;
+}
+#leftmenu a:link {
+	color:#9f9f00;
+	font-size:14px;
+	font-weight:bold;
+	text-decoration:none;
+	font-family:"Arial Narrow";
+	line-height:200%;
+	background: url('Pictures/bullet2.jpg') no-repeat 0px 4px;
+	padding-left: 20px;
+}
+#leftmenu a:visited {
+	color:#9f9f00;
+	font-size:14px;
+	font-weight:bold;
+	text-decoration:none;
+	font-family:"Arial Narrow";
+	line-height:200%;
+	background: url('Pictures/bullet2.jpg') no-repeat 0px 4px;
+	padding-left: 20px;
+}
+#leftmenu a:hover {
+	color:#61210B;
+	font-size:14px;
+	font-weight:bold;
+	text-decoration:underline;
+	font-family:"Arial Narrow";
+	line-height:200%;
+	background: url('Pictures/bullet2.jpg') no-repeat 0px 4px;
+	padding-left: 20px;
+}
+#leftmenu a:active{
+	color:#61210B;
+	font-size:14px;
+	font-weight:bold;
+	text-decoration:underline;
+	font-family:"Arial Narrow";
+	line-height:200%;
+	background: url('Pictures/bullet2.jpg') no-repeat 0px 4px;
+	padding-left: 20px;
+}
+#leftmenu2 a:link {
+	color:#61210B;
+	font-size:12px;
+	text-decoration:none;
+	font-family:"Arial Narrow";
+	font-weight:bold;
+	line-height:150%;
+	background: url('Pictures/bullet3.jpg') no-repeat 0px 4px;
+	padding-left: 20px;
+	float:left;
+	margin-left:10px;
+}
+#leftmenu2 a:visited {
+	color:#61210B;
+	font-size:12px;
+	text-decoration:underline;
+	font-family:"Arial Narrow";
+	font-weight:bold;
+	line-height:150%;
+	background: url('Pictures/bullet3.jpg') no-repeat 0px 4px;
+	padding-left: 20px;
+	float:left;
+	margin-left:10px;
+}
+#leftmenu2 a:hover {
+	color:#9f9f00;
+	font-size:12px;
+	text-decoration:underline;
+	font-family:"Arial Narrow";
+	font-weight:bold;
+	line-height:150%;
+	background: url('Pictures/bullet3.jpg') no-repeat 0px 4px;
+	padding-left: 20px;
+	float:left;
+	margin-left:10px;
+}
+#leftmenu2 a:active{
+	color:#9f9f00;
+	font-size:12px;
+	text-decoration:underline;
+	font-family:"Arial Narrow";
+	font-weight:bold;
+	line-height:150%;
+	background: url('Pictures/bullet3.jpg') no-repeat 0px 4px;
+	padding-left: 20px;
+	float:left;
+	margin-left:10px;
+}
+.body1{
+	vertical-align:top;
+	font-size:18px;
+}
+.index1{
+	vertical-align:top;
+	border-right: 2px solid black;
+	border-right-style: dashed;
+}
+ul.list-tick {
+	margin: 10px;
+	padding: 0;
+}
+ul.list-tick li {
+	margin: 10px;
+	padding: 2px 0 2px 16px;
+	list-style: none;
+	background: url('Pictures/bullet1.jpg') no-repeat 0px 7px;
+}
+.header1{
+	color:#9f9f00;
+	font-size:24px;
+	font-weight:bold;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	line-height:200%;
+	text-decoration:underline;
+}
+.header2{
+	margin: 5px;
+	color:#61210B;
+	font-size:24px;
+	text-decoration:none;
+	font-family:Georgia, "Times New Roman", Times, serif;
+}
+.codeblock {
+	margin:5px 0px 10px 0px;
+	background: #f1f5de;	
+	font-family: verdana;	
+	padding: 0px 0px 0px 0px;
+	border: 1px solid #d5ddc6;
+	//border: 15px solid #d4d8d4;	
+    -moz-box-shadow: 8px 3px 10px #d4d4d4;
+    -webkit-box-shadow: 8px 3px 10px #d4d4d4;
+    box-shadow: 5px 3px 10px #d4d4d4;
+}
+.code1{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:15px;
+	font-weight:normal;
+	line-height:150%;
+}
+
+.quotation{
+	color:#0000FF;
+}
+.comment{
+	color:#FF0000;
+}
+.keyword{
+	color:#003300;
+	font-weight:bold;
+}
+.bold{
+	font-weight:bold;	
+}
+.header3{
+	background-color:#edd1e2;
+	font-size:20px;
+	color:#660000;
+	font-family:Arial, Helvetica, sans-serif;
+	 -moz-box-shadow: 8px 3px 10px #d4d4d4;
+    -webkit-box-shadow: 8px 3px 10px #d4d4d4;
+    box-shadow: 5px 3px 10px #d4d4d4;
+	border: 1px solid pink;
+}
+.header4{
+	background-color:#f9fbf9;
+	font-weight:bold;
+	font-size:16px;
+	color:#000000;
+	font-family:Arial, Helvetica, sans-serif;
+	 -moz-box-shadow: 8px 3px 10px #d4d4d4;
+    -webkit-box-shadow: 8px 3px 10px #d4d4d4;
+    box-shadow: 5px 3px 10px #d4d4d4;
+	border: 1px solid #d5ddc6;
+}
+.header5{
+	font-weight:bold;
+	font-size:18px;
+	color:#610B38;
+	font-family:tahoma;
+	font-style:italic;
+}
+.hidden{
+	color:#FF0000;
+}
+#download{
+	font-size:16px;
+	color:#61210B;;;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+}
